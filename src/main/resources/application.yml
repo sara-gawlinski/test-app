@@ -1,0 +1,17 @@
+# src/main/resources/application.yml
+spring:
+  security:
+    oauth2:
+      client:
+        registration:
+          auth0:
+            client-id: MoOQ0hcQwt740lhnmpIRAna9gIuyyqWC
+            client-secret: dEAKB-sCrxE32MCNI3U2zO9ct5eCcpo0iYABf82oDomLXBOy1BZtIIcti3Seix2G
+            scope:
+              - openid
+              - profile
+              - email
+        provider:
+          auth0:
+            # trailing slash is important!
+            issuer-uri: https://dev-oz2rpgvp.us.auth0.com/
